@@ -14,6 +14,7 @@ import MoreHoriz from '@material-ui/icons/MoreHoriz';
 import WebAsset from '@material-ui/icons/WebAsset';
 import Map from '@material-ui/icons/Map';
 import Layers from '@material-ui/icons/Layers';
+import Toys from '@material-ui/icons/Toys';
 
 // https://material-ui.com/components/icons/#svgicon
 function StickyBoardIcon(props) {
@@ -51,6 +52,13 @@ const SidebarMenuDict = {
             icon: <WebAsset />,
             url: '/intro/dialog',
             value: 103,
+            need_permission: false,
+        },
+        {
+            title: 'Playground',
+            icon: <Toys />,
+            url: '/intro/playground',
+            value: 104,
             need_permission: false,
         },
     ],

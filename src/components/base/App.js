@@ -16,6 +16,7 @@ const SignUpPage = loadable(() => import('components/page/SignUpPage'));
 // Introduction
 const IntroPage = loadable(() => import('components/page/IntroPage'));
 const IntroDatabasePage = loadable(() => import('components/page/IntroDatabasePage'));
+const IntroPlaygroundPageContainer= loadable(() => import('redux/containers/IntroPlaygroundPageContainer'));
 // Component
 const ComponentRechartsPage= loadable(() => import('components/page/ComponentRechartsPage'));
 const ComponentHighchartsPage= loadable(() => import('components/page/ComponentHighchartsPage'));
@@ -107,6 +108,7 @@ class App extends React.Component {
                                     {/* Intro */}
                                     <Route exact path='/intro' component={IntroPage} />
                                     <Route exact path='/intro/database' component={IntroDatabasePage} />
+                                    <Route exact path='/intro/playground' component={IntroPlaygroundPageContainer} />
                                     {/* Component */}
                                     <Route path='/components/recharts' component={ComponentRechartsPage} />
                                     <Route path='/components/highcharts' component={ComponentHighchartsPage} />
